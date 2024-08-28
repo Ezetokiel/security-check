@@ -25,11 +25,11 @@
     </div>
     <script>
         const loadingScreen = document.querySelector(".loading-container");
-        const ding = new Audio('buzz.mp3');
+        const buzz = new Audio('buzz.mp3');
         window.onload = function() {
             setTimeout(function() {
                 loadingScreen.style.display = 'none';
-                audio.play(ding);
+                audio.play(buzz);
             }, 4000);
         }
     </script>
