@@ -23,6 +23,15 @@
         <i class='bx bxs-x-circle icon-false'></i>
         <a href="index.html" class="check-again-false">Check new identity</a>
     </div>
-    <script src="security.js"></script>
+    <script>
+        const loadingScreen = document.querySelector(".loading-container");
+        const ding = new Audio('buzz.mp3');
+        window.onload = function() {
+            setTimeout(function() {
+                loadingScreen.style.display = 'none';
+                audio.play(ding);
+            }, 4000);
+        }
+    </script>
 </body>
 </html>
